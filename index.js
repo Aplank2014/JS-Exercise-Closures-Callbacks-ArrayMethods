@@ -162,13 +162,16 @@ function processDuplicateFree(list, callback) {
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 //  console.log(lowerCaseStrings([ 'Orange', 'APPLE', 'banana', 'mAnGo'])
-//console.log(lowerCaseStrings([ 'Orange', 'APPLE', 'banana', 'mAnGo'])
+
   /* code here */
-  
-  function lowerCaseStrings(strings) {
-    return strings.forEach(strings => strings.toLowerCase());
-    
+ 
+  function lowerCaseStrings(arr) {
+    const uppercaseArr = [];
+    arr.forEach(item => uppercaseArr.push(item.toLowerCase()));
+    return uppercaseArr;
   }
+  
+  // console.log(lowerCaseStrings([ 'Orange', 'APPLE', 'banana', 'mAnGo'])
   // console.log(lowerCaseStrings([ 'Orange', 'APPLE', 'banana', 'mAnGo']);
 /**
  * ### Challenge `isItAnApple`
